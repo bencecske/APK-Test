@@ -83,7 +83,7 @@ button:hover {
 header, footer {
     width: 100%;
     background-color: #272727;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     position: fixed;
     left: 0;
@@ -107,13 +107,13 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 15%;
+    justify-content: space-between;
+    gap: 30px;
 }
 .IconContainer svg {
     transition: all .5s;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     filter: invert(30%) sepia(80%) saturate(4189%) hue-rotate(206deg) brightness(102%) contrast(107%);
 }
 .IconContainer svg:hover {
@@ -122,9 +122,6 @@ img {
 @media (max-width: 600px) {
     .bodydiv {
         max-width: 90%;
-    }
-    button {
-        font-size: 14px;
     }
 }
 ::-webkit-scrollbar {

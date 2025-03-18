@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 500px;
     padding: 20px;
@@ -34,8 +35,7 @@ section {
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin: auto;
 }
 .container {
     width: 100%;
@@ -54,7 +54,6 @@ section {
 .shopDetails{
     display: flex;
     flex-direction: row;
-    gap: 30px;
     overflow-x: scroll;
 }
 .companyDetails {
@@ -103,7 +102,12 @@ img {
     filter: invert(31%) sepia(51%) saturate(6874%) hue-rotate(208deg) brightness(105%) contrast(103%);
     width: 70px;
     height: 70px;
+    transition: all .5s;
+    margin: 0px 10px 0px 10px;
   }
+img:hover {
+    scale: 1.1;
+}
 .IconContainer {
     display: flex;
     flex-direction: row;
@@ -140,3 +144,21 @@ img {
   ::-webkit-scrollbar-thumb:hover {
     background: #016fff;
   }
+  .to, .back{
+    position: absolute;
+    top: 4px;
+  }
+  .to{
+    right: 0;
+    margin-right: 10px;
+  }
+  .back{ 
+    left: 0;
+    margin-left: 10px;
+  }
+  header svg {
+    transition: all .5s;
+    width: 50px;
+    height: 50px;
+    filter: invert(30%) sepia(80%) saturate(4189%) hue-rotate(206deg) brightness(102%) contrast(107%);
+}

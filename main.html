@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/index.css">
+    <title>APK - Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: black;
+            color: #016fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .bodydiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+        section {
+            background-color: #272727;
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid #016fff;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s all;
+        }
+        button:hover {
+            background-color: #016fff;
+            color: black;
+        }
+        header, footer {
+            width: 100%;
+            background-color: #272727;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+        }
+        header {
+            top: 0;
+            border-radius: 0px 0px 30px 30px;
+        }
+        footer {
+            bottom: 0;
+            border-radius: 30px 30px 0px 0px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .IconContainer svg {
+            width: 40px;
+            height: 40px;
+        }
+        @media (max-width: 600px) {
+            .bodydiv {
+                max-width: 90%;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+    </header>
+    <div class="bodydiv">
+        <section>
+            <div class="container">
+                <p>Total Balance - 0$</p>
+            </div>
+            <div class="container">
+                <p>Earn Money - 0$/click</p>
+                <div class="details">
+                    <button id="earnMoney">Click for Money</button>
+                </div>
+            </div>
+            <div class="container">
+                <p>Increase $/click</p>
+                <div class="details">
+                    <button id="increaseClick">Increase for 0$</button>
+                </div>
+            </div>
+            <div class="container">
+                <p>Boost Earnings</p>
+                <div class="details">
+                    <button class="AdButton">Watch ad for boost</button>
+                    <button class="AdButton">Watch ad for auto earning</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="IconContainer">
+            <a href="stock.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg></a>
+            <a href="company.html"><svg viewBox="0 0 24 24"><rect width="20" height="10" x="2" y="7"/></svg></a>
+            <a href="index.html"><svg viewBox="0 0 24 24"><path d="M14 21V15H10V21M19 9.778V16.2C19 17.88 19 18.72 18.673 19.362C18.385 19.926 17.927 20.385 17.362 20.673C16.72 21 15.88 21 14.2 21H9.8C8.12 21 7.28 21 6.638 20.673C6.074 20.385 5.615 19.926 5.327 19.362C5 18.72 5 17.88 5 16.2V9.778M21 12L15.567 5.964C14.331 4.591 13.713 3.905 12.986 3.652C12.347 3.429 11.651 3.429 11.012 3.652C10.284 3.905 9.667 4.592 8.431 5.965L3 12"/></svg></a>
+        </div>
+    </footer>
+</body>
+</html>

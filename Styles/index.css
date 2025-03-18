@@ -35,7 +35,6 @@ section {
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    margin: auto;
 }
 .container {
     width: 100%;

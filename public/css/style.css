@@ -133,6 +133,9 @@ body {
 }
 
 .input-area {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 0.5rem;

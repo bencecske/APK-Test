@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+  <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+  <div class="sidebar" id="sidebar">
+    <h2>Nyilvános csoportok</h2>
+    <div class="list" id="publicGroups">
+      <div class="list-item" data-type="group" data-name="Általános"># Általános</div>
+      <div class="list-item" data-type="group" data-name="Programozás"># Programozás</div>
+    </div>
+    <h2>Privát csoportok</h2>
+    <div class="list" id="privateGroups">
+      <div class="list-item" id="createGroup">+ Új csoport</div>
+    </div>
+    <h2>Online Kontaktok</h2>
+    <div class="list" id="userList">
+      <div class="list-item" data-type="private" data-name="Bence">👤 Bence</div>
+      <div class="list-item" data-type="private" data-name="Anna">👤 Anna</div>
+    </div>
+    <div class="user-footer">
+      Bejelentkezve: <strong>tesztuser</strong><br>
+      <button class="icon-button"><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <div id="chatTitle"><strong>Kezdőlap</strong></div>
+    </div>
+    <div class="chat homepage" id="chatMessages">
+      <h2 style="color: var(--accent-color)">Nyilvános csoportok</h2>
+      <div class="list-item"># Általános</div>
+      <div class="list-item"># Programozás</div>
+      <br>
+      <h2 style="color: var(--accent-color)">Privát csoportok</h2>
+      <div class="list-item">🔒 Csicskák</div>
+      <div class="list-item">+ Új csoport</div>
+    </div>
+    <div class="input-area">
+      <input type="text" placeholder="Írj üzenetet..." id="messageInput" />
+      <label class="icon-button"><i class="fas fa-image"></i><input type="file" accept="image/*"></label>
+      <label class="icon-button"><i class="fas fa-paperclip"></i><input type="file"></label>
+      <button class="icon-button" id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <div class="auth-form" id="authForm">
+    <div class="auth-box">
+      <h3>Bejelentkezés</h3>
+      <input type="text" placeholder="Felhasználónév">
+      <input type="password" placeholder="Jelszó">
+      <button>Belépés</button>
+    </div>
+  </div>
+
+  <div id="groupModal">
+    <h3>Új privát csoport</h3>
+    <input type="text" placeholder="Csoport neve">
+    <textarea placeholder="Tagok vesszővel elválasztva"></textarea>
+    <input type="text" placeholder="Téma">
+    <button onclick="closeGroupModal()">Mentés</button>
+  </div>
+
+  <script src="/public/js/main.js"></script>
+</body>
+</html>
